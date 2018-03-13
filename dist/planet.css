@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+#root {
+  width: 100%;
+  height: 100%;
+  background-color: #aaa; }
+  #root .plant-base-wrapper {
+    height: 100%; }
+    #root .plant-base-wrapper .display-area {
+      height: 40em;
+      background-color: #ccc;
+      position: relative; }
+      #root .plant-base-wrapper .display-area button {
+        height: 4em;
+        width: 40%;
+        border: 1px solid black;
+        margin: 2em;
+        position: absolute;
+        bottom: 2em; }
+      #root .plant-base-wrapper .display-area button.get-power {
+        left: 4em; }
+      #root .plant-base-wrapper .display-area button.dimond-auction {
+        right: 4em; }

@@ -1,15 +1,10 @@
+import App from './src'
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import PlantBase from './src/pages/plantBase'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 
-import './style/main.scss'
-
-class App extends Component {
-	render() {
-		return (
-			<PlantBase />
-		)
-	}
-}
-
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render((
+	<Router>
+		<App />
+	</Router>
+), document.getElementById("root"))

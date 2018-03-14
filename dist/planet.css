@@ -23,3 +23,14 @@
         left: 4em; }
       #root .plant-base-wrapper .display-area button.dimond-auction {
         right: 4em; }
+  #root .navigator {
+    width: 100%;
+    height: 4em;
+    position: absolute;
+    bottom: 0px;
+    background-color: #fff; }
+    #root .navigator div {
+      display: inline-block;
+      width: 50%;
+      text-align: center;
+      line-height: 4em; }

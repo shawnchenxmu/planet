@@ -34,3 +34,19 @@
       width: 50%;
       text-align: center;
       line-height: 4em; }
+  #root .login {
+    text-align: center;
+    padding-top: 10em; }
+    #root .login button {
+      border: 1px solid #8888ee;
+      height: 3em;
+      width: 20em; }
+    #root .login div {
+      height: 4em;
+      line-height: 4em; }
+      #root .login div input {
+        height: 3em;
+        width: 20em;
+        margin: 0 1em; }
+      #root .login div button {
+        width: 6em; }

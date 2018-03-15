@@ -49,4 +49,30 @@
 			line-height: 4em;
 		}
 	}
+
+	.login {
+		text-align: center;
+		padding-top: 10em;
+
+		button {
+			border: 1px solid #8888ee;
+			height: 3em;
+			width: 20em;
+		}
+
+		div {
+			height: 4em;
+			line-height: 4em;
+
+			input {
+				height: 3em;
+				width: 20em;
+				margin: 0 1em;
+			}
+
+			button {
+				width: 6em;
+			}
+		}
+	}
 }

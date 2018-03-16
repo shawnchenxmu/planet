@@ -12,10 +12,10 @@ export default class extends Component {
 	render() {
 		return (
 			<div>
-				{/* <Route exact path="/" component={PlantBase} />
+				<Route exact path="/" component={PlantBase} />
 				<Route path="/myBase" component={MyBase} />
-				<Navigator /> */}
-				<Login />
+				<Navigator />
+				{/*<Login />*/}
 			</div>
 		)
 	}

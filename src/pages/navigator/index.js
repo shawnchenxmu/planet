@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
+import FontAwesome from 'react-fontawesome'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 
 export default class extends Component {

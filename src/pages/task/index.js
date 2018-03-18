@@ -10,19 +10,22 @@ export default class extends Component {
 					<h2>赶紧收取原力，加速获取黑钻</h2>
 					<p>原力越多，获取的黑钻会越多</p>
 				</div>
-				<div className="task-page-regular">
+				<div className="task-container task-page-regular">
 					<h2>定期任务</h2>
-					<div></div>
-					<div></div>
+					<div>邀请 5 名好友</div>
+					<div>每日登录</div>
 					<div></div>
 				</div>
-				<div className="task-page-exclusive">
+				<div className="task-container task-page-exclusive">
 					<h2>独家任务</h2>
-					<div></div>
-					<div></div>
-					<div></div>
+					<div>网易云课堂</div>
+					<div>极客战记</div>
+					<div>网易云音乐</div>
+					<div>网易严选</div>
+					<div>网易云阅读</div>
+					<div>敬请期待……</div>
 				</div>
-				<p>刷新页面，查看任务最新状态</p>
+				<p className="task-page-bottom">刷新页面，查看任务最新状态</p>
 			</div>
 		)
 	}

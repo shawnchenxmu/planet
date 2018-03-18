@@ -7,12 +7,12 @@ body {
   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Heiti SC","Microsoft YaHei","微软雅黑","San francisco",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  background-color: #eee;
 }
 
 
 #root {
 	width: 100%;
-	background-color: #aaa;
 
 	.plant-base-wrapper {
 		height: 100%;
@@ -159,6 +159,58 @@ body {
 			button {
 				width: 6em;
 			}
+		}
+	}
+
+	.task-page {
+		text-align: center;
+
+		.task-page-header {
+			background-color: #c100ae;
+			padding-top: 1em;
+			height: 6em;
+		}
+
+		.task-container {
+			background-color: #fff;
+			margin-top: 1em;
+			display: grid;
+
+			h2 {
+				text-align: left;
+				line-height: 3em;
+				font-weight: normal;
+				margin-left: 1em;
+				grid-column: 1 / 4;
+				font-size: 1em;
+			}
+
+			div {
+				border-top: 1px solid #eee;
+				border-right: 1px solid #eee;
+				padding: 1em;
+			}
+
+		}
+
+		.task-page-regular {
+			grid-template-columns: 33% 33% 33%;
+			grid-template-rows: 3em 8em;
+		}
+
+		.task-page-exclusive {
+			grid-template-columns: 33% 33% 33%;
+			grid-template-rows: 3em 8em 8em;
+
+			h2 {
+				text-align: left;
+				grid-column: 1 / 4;
+			}
+		}
+
+		p.task-page-bottom {
+			margin: 1em;
+			color: #999;
 		}
 	}
 }

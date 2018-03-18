@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import FontAwesome from 'react-fontawesome'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 
 export default class extends Component {
 	render() {
@@ -14,7 +15,7 @@ export default class extends Component {
 					<p>Ulysiss</p>
 					<span className="user-title">星球居民</span>
 					<button><FontAwesome name="google-wallet" style={{ fontSize: "1.5em", color: "#000", marginRight: "0.5em" }} />我的资产</button>
-					<button><FontAwesome name="rocket" style={{ fontSize: "1.5em", color: "#000", marginRight: "0.5em" }} />加速黑钻</button>
+					<Link to="/task"><button><FontAwesome name="rocket" style={{ fontSize: "1.5em", color: "#000", marginRight: "0.5em" }} />加速黑钻</button></Link>
 				</div>
 				<div className="my-base my-base-bidding">
 					<h2>黑钻竞拍</h2><span>3月中旬，不见不散</span>

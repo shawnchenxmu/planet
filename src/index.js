@@ -9,15 +9,21 @@ import Task from './pages/task'
 
 import '../style/main.scss'
 
+const Base = ({ match }) => (
+	<div>
+		<Route exact path={`${match.url}/`} component={PlantBase} />
+		<Route path={`${match.url}/myBase`} component={MyBase} />
+		<Navigator match={match} />
+	</div>
+)
+
 export default class extends Component {
 	render() {
 		return (
 			<div>
-				{/*<Route exact path="/" component={PlantBase} />
-				<Route path="/myBase" component={MyBase} />
-				<Navigator />*/}
-				{/*<Login />*/}
-				<Task />
+				<Route exact path="/" component={Login} />
+				<Route path="/base" component={Base} />
+				<Route path="/task" component={Task} />
 			</div>
 		)
 	}

@@ -12,22 +12,55 @@ body {
 #root {
   width: 100%; }
   #root .plant-base-wrapper {
-    height: 100%; }
+    margin-bottom: 5em; }
     #root .plant-base-wrapper .display-area {
-      height: 40em;
+      padding-top: 1em;
+      height: 30em;
       background-color: #ccc;
-      position: relative; }
+      position: relative;
+      background-image: url("5a043859920fc1493a8378a5da7ba796.jpg");
+      background-size: 100% 100%; }
+      #root .plant-base-wrapper .display-area div {
+        color: #57c0ff;
+        margin: 1em 0 1em 2em; }
+        #root .plant-base-wrapper .display-area div span {
+          margin-right: 0.5em;
+          color: #57ffff; }
       #root .plant-base-wrapper .display-area button {
-        height: 4em;
-        width: 40%;
-        border: 1px solid black;
-        margin: 2em;
+        height: 2em;
+        width: 42%;
+        border: 1px solid #57c0ff;
         position: absolute;
-        bottom: 2em; }
+        bottom: 2em;
+        background-color: transparent;
+        color: #57c0ff;
+        font-size: 1.5em; }
       #root .plant-base-wrapper .display-area button.get-power {
-        left: 4em; }
+        left: 5%; }
       #root .plant-base-wrapper .display-area button.dimond-auction {
-        right: 4em; }
+        right: 5%; }
+    #root .plant-base-wrapper .rank-table {
+      background-color: #fff; }
+      #root .plant-base-wrapper .rank-table h3 {
+        height: 2em;
+        color: #333;
+        line-height: 2em;
+        padding-left: 1em; }
+      #root .plant-base-wrapper .rank-table table {
+        width: 100%; }
+        #root .plant-base-wrapper .rank-table table tr {
+          display: grid;
+          grid-template-columns: 30% 23% 23% 24%;
+          grid-template-rows: 2.5em;
+          line-height: 2.5em;
+          font-size: 1em;
+          text-align: left;
+          color: #555; }
+          #root .plant-base-wrapper .rank-table table tr td, #root .plant-base-wrapper .rank-table table tr th {
+            padding-left: 1em;
+            font-weight: normal; }
+          #root .plant-base-wrapper .rank-table table tr:first-child {
+            background-color: #efefef; }
   #root .my-base-wrapper {
     text-align: center;
     padding: 20% 0; }
@@ -88,15 +121,20 @@ body {
     height: 10%;
     position: fixed;
     bottom: 0px;
-    background-color: #fff; }
-    #root .navigator div {
+    background-color: #fff;
+    border-top: 1px solid #aaa; }
+    #root .navigator a {
       display: inline-block;
+      box-sizing: border-box;
       width: 50%;
       text-align: center;
-      line-height: 4em; }
-      #root .navigator div a {
-        text-decoration: none;
-        color: #aaa; }
+      line-height: 4em;
+      text-decoration: none;
+      color: #aaa; }
+    #root .navigator .nav-plantBase {
+      height: 3em;
+      line-height: 3em;
+      border-right: 1px solid #aaa; }
   #root .login {
     text-align: center;
     padding-top: 10em; }
@@ -116,7 +154,7 @@ body {
   #root .task-page {
     text-align: center; }
     #root .task-page .task-page-header {
-      background-color: #c100ae;
+      background: linear-gradient(-90deg, #fb1111 0%, #118bfb 100%);
       padding-top: 1em;
       height: 6em; }
     #root .task-page .task-container {

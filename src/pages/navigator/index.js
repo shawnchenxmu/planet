@@ -7,8 +7,8 @@ export default class extends Component {
 	render() {
 		return (
 			<div className="navigator">
-				<div className="nav-plantBase"><Link to={`${this.props.match.url}`}>星球基地</Link></div>
-				<div className="nav-myBase"><Link to={`${this.props.match.url}/myBase`}>我的基地</Link></div>
+				<Link to={`${this.props.match.url}`}><div className="nav-plantBase">星球基地</div></Link>
+				<Link to={`${this.props.match.url}/myBase`}><div className="nav-myBase">我的基地</div></Link>
 			</div>
 		)
 	}

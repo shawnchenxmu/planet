@@ -15,28 +15,76 @@ body {
 	width: 100%;
 
 	.plant-base-wrapper {
-		height: 100%;
+		margin-bottom: 5em;
 
 		.display-area {
-			height: 40em;
+			padding-top: 1em;
+			height: 30em;
 			background-color: #ccc;
 			position: relative;
+			background-image: url('../src/images/star.jpg');
+			background-size: 100% 100%;
+
+			div {
+				color: #57c0ff;
+				margin: 1em 0 1em 2em;
+
+				span {
+					margin-right: 0.5em;
+					color: #57ffff;
+				}
+			}
 
 			button {
-				height: 4em;
-				width: 40%;
-				border: 1px solid black;
-				margin: 2em;
+				height: 2em;
+				width: 42%;
+				border: 1px solid #57c0ff;
 				position: absolute;
 				bottom: 2em;
+				background-color: transparent;
+				color: #57c0ff;
+				font-size: 1.5em;
 			}
 
 			button.get-power {
-				left: 4em;
+				left: 5%;
 			}
 
 			button.dimond-auction {
-				right: 4em;
+				right: 5%;
+			}
+		}
+
+		.rank-table {
+			background-color: #fff;
+
+			h3 {
+				height: 2em;
+				color: #333;
+				line-height: 2em;
+				padding-left: 1em;
+			}
+
+			table {
+				width: 100%;
+					tr {
+						display: grid;
+						grid-template-columns: 30% 23% 23% 24%;
+						grid-template-rows: 2.5em;
+						line-height: 2.5em;
+						font-size: 1em;
+						text-align: left;
+						color: #555;
+
+						td, th {
+							padding-left: 1em;
+							font-weight: normal;
+						}
+
+						&:first-child {
+							background-color: #efefef;
+						}
+					}
 			}
 		}
 	}
@@ -122,17 +170,22 @@ body {
 		position: fixed;
 		bottom: 0px;
 		background-color: #fff;
+		border-top: 1px solid #aaa;
 
-		div {
+		a {
 			display: inline-block;
+			box-sizing: border-box;
 			width: 50%;
 			text-align: center;
 			line-height: 4em;
+			text-decoration: none;
+			color: #aaa;
+		}
 
-			a {
-				text-decoration: none;
-				color: #aaa;
-			}
+		.nav-plantBase {
+			height: 3em;
+			line-height: 3em;
+			border-right: 1px solid #aaa;
 		}
 	}
 
@@ -166,7 +219,7 @@ body {
 		text-align: center;
 
 		.task-page-header {
-			background-color: #c100ae;
+      background: linear-gradient(-90deg, #fb1111 0%, #118bfb 100%);
 			padding-top: 1em;
 			height: 6em;
 		}
